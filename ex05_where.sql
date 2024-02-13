@@ -16,6 +16,11 @@
     - 원하는 레코드만 추출 > 결과셋 생성
     
     
+    between
+    -where 절에서 사용 > 조건으로 사용 
+    - 컬럼명 between 최솟값 and 최대값 (범위 조건)
+    - 가독성 향상 
+    
     */
     select name,height  -- 열 추출
     FROM tblMen         
@@ -75,3 +80,13 @@ select
 *
 from tblInsa
 where BASICPAY + SUDANG >= 2000000;
+
+select
+*
+from tblInsa
+where basicpay >= 1500000 and basicpay <= 2000000;
+
+select
+*
+from tblInsa
+where basicpay between 1500000 and 2000000;

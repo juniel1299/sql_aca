@@ -37,4 +37,37 @@ select * from tblType; -- select 절 , from 절  , * == 모든 컬럼 의미
 
 desc employees; -- 테이블 구조 보는 법 , desc 테이블 명 
 
-select * from employees; 
+select * from tblCountry;  --14;
+select * from tblComedian; --10
+select * from tblDiary; --10
+select * from tblInsa; --60
+select * from tblMen; --10
+select * from tblWomen; --10
+select * from tblTodo; --20
+
+
+
+
+
+-- select > 결과 테이블 (Result table, ResultSet)
+
+
+select * -- 모든 컬럼
+from tblCountry;
+
+select name --단일 컬럼
+from tblCountry;
+
+
+select capital,name --다중 컬럼, 순서 상관 없음 
+from tblCountry;
+
+
+select
+    name,length(name)
+from tblCountry;
+
+select
+    name,length(name)
+from tblCountry;
+

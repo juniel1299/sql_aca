@@ -37,3 +37,41 @@
     *
     from tblCountry
     where continent = 'AS' or continent = 'AF';
+    
+    
+    
+    --tblComedian 
+    
+    --1. 몸무게 60 이상 키 170 미만 
+    -- 몸무게 70 이하 여자만 
+   
+   --tblInsa
+   --3.부서가 '개발부' , 급여가 150만원 이상 받는 직원 
+   --4. 급여 + 수당 합한 금액이 200만원 이상인 직원 
+
+    
+    
+    select
+    *
+    from tblComedian
+    where height < 170 and weight >= 60;
+    
+    
+    select
+    *
+    from tblComedian
+    where weight <= 70 and gender = 'f';
+
+select
+*
+from tblInsa;
+
+select
+*
+from tblInsa
+where BUSEO = '개발부' and BASICPAY >=1500000;
+
+select
+*
+from tblInsa
+where BASICPAY + SUDANG >= 2000000;

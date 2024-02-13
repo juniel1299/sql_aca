@@ -37,4 +37,4 @@ select * from tblType; -- select 절 , from 절  , * == 모든 컬럼 의미
 
 desc employees; -- 테이블 구조 보는 법 , desc 테이블 명 
 
-select * from employees;
+select * from employees; 

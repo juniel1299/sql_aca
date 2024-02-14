@@ -13,7 +13,7 @@
     - 반올림 함수
     - number round (컬럼명)
     - number round(컬럼명,소수이하 자릿수) : 실수 반환     
-
+ 
 */
 
 select round(avg(basicpay)) from tblInsa;

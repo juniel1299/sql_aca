@@ -88,3 +88,10 @@ floor(10/3)as 몫
 from dual;
 
 select mod(10,3) from dual;
+
+
+select
+    abs(10),abs(-10),
+    power(2,2),power(2,3),power(2,4),
+    sqrt(4),sqrt(9),sqrt(16)
+    from dual;

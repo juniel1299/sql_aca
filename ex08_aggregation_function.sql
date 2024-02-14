@@ -92,4 +92,40 @@ select
        
         from tblInsa;
         
-        
+       
+       /*
+       
+       2. sum()
+       - 해당 컬럼의 합을 구한다.
+       - number sum(컬럼명)
+       - 숫자형 적용 가능
+
+       
+       */
+       
+select sum(population),sum(area) from tblCountry; -- 인구 총합 , 총 면적 
+
+
+select
+sum(basicpay) as "지출 급여 합",
+sum(sudang) as "지출 수당 합",
+sum(basicpay + sudang) as "총 지출"
+from tblInsa;
+
+
+
+-- select sum(*) from tblInsa; 안 됨 
+
+/*
+
+    3. avg()
+    - 해당 컬럼의 평균값을 구한다.
+    - number avg(컬럼명)
+    - 숫자형 적용 가능 
+
+*/
+
+-- tblInsa 평균 급여?
+
+select avg(basicpay)  from tblInsa;
+

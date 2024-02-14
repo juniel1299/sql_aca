@@ -182,4 +182,7 @@ select count(*) from tblInsa;
 
 -- 요구사항] 평균 급여보다 더 많이 받는 직원들?
 -- where 절에는 집계 함수를 사용할 수 없다.
+-- where 절 > 개인(레코드)에 대한 조건절
+
 --select * from tblInsa where basicpay >=avg(basicpay);
+

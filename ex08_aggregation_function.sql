@@ -122,6 +122,7 @@ from tblInsa;
     - 해당 컬럼의 평균값을 구한다.
     - number avg(컬럼명)
     - 숫자형 적용 가능 
+    - 합 / 레코드 수 > null 제외 
 
 */
 
@@ -129,3 +130,56 @@ from tblInsa;
 
 select avg(basicpay)  from tblInsa;
 
+ -- tblCountry 평균 인구수 ?
+ select sum(population) / count(*) from tblCountry;
+ select avg(population) from tblCountry; -- 빈칸 때문에 차이 발생 
+ 
+ 
+ -- 회사 > 성과급 지급 > 출처 > 1팀 공로 
+ -- 1. 균등 지급 > 총 지급 액 / 모든 직원 수 = sum() / count(*) 
+ -- 2. 팀 지급 > 총 지급 액 / 팀원 수  = sum() / count(1팀) > avg(1팀)
+ 
+ 
+ /*
+ 
+    4. max()
+    - object max(컬럼명)
+    - 최댓값 반환
+    
+    5. min()
+    - object min(컬럼명)
+    - 최솟값 반환
+    
+    - 숫자 , 문자, 날짜형 모두 적용 가능 
+ 
+ */
+ 
+ select max(basicpay) from tblInsa; -- 숫자형
+ select min(basicpay) from tblInsa; -- 숫자형
+ select min(name) from tblInsa; --문자형
+  select max(name) from tblInsa;
+   select min(ibsadate) from tblInsa; -- 날짜형
+   select max(ibsadate) from tblInsa;
+   
+
+select
+    count(*) as 직원수,
+    sum(basicpay) as 총급여합,
+    avg(basicpay) as 평균급여,
+    max(basicpay) as 최고급여,
+    min(basicpay) as 최저급여
+    from tblInsa;
+    
+-- 집계 함수 사용 시 주의점 !!! 
+
+-- 요구사항] 직원들 이름과 총 직원수를 가져오시오. 
+
+--컬럼 리스트에서 집계 함수와 일반 컬럼을 동시에 사용할 수 없음 . 
+--select name,count(*) from tblInsa;
+
+select name from tblInsa;
+select count(*) from tblInsa;
+
+-- 요구사항] 평균 급여보다 더 많이 받는 직원들?
+-- where 절에는 집계 함수를 사용할 수 없다.
+--select * from tblInsa where basicpay >=avg(basicpay);

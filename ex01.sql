@@ -23,6 +23,7 @@
 
 설치 중.. SYS, SYSTEM, PDBADMIN > 오라클 계정
 암호 > java1234
+집에 오라클 암호는 ts7393
 
 
 

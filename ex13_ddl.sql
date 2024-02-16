@@ -217,3 +217,55 @@ values(3,'홍길동','메모입니다.', default);           -- default 쓰려�
 
 drop table tblMemo;
 select * from tblMemo;
+
+/*
+
+    제약 사항을 만드는 방법 
+    
+    단기적에서 장기적 순 
+    
+    1. 컬럼 수준에서 만드는 방법
+        - 이전에 수업했던 방식
+        - 컬럼을 선언할 때 제약 사항도 같이 선언하는 방법 
+    
+    2. 테이블 수준에서 만드는 방법
+        - 컬럼 선언과 제약 사항을 분리시켜 선언하는 방법
+        - 코드 관리를 위해서
+        
+    3. 외부에서 만드는 방법 
+        - 테이블 수정 명령어 사용 > alter table 
+
+*/
+
+drop table tblMemo;
+
+create table tblMemo(
+    seq number constraint tblmemo_seq_pk primary key, --에러에 이름이 나오도록 할 수 있음. 
+    name varchar2(30),
+    memo varchar2(1000),
+    regdate date
+    );
+    
+    insert into tblMemo(seq,name,memo,regdate) values (1,'홍길동','메모',sysdate);
+    
+    select * from tblMemo;
+    
+-- 2. 테이블 수준에서 만드는 방법
+
+
+drop table tblMemo;
+
+create table tblMemo(
+    seq number , --에러에 이름이 나오도록 할 수 있음. 
+    name varchar2(30),
+    memo varchar2(1000),
+    regdate date,
+   -- 제약사항 정의
+   constraint tblmemo_seq_pk primary key(seq),
+   constraint tblmemo_name_uq unique(name),
+   constraint tblmemo_memo_ck check(length(memo) >=10)
+    );
+    
+    insert into tblMemo(seq,name,memo,regdate) values (1,'홍길동','메모메모메모메모메모메모',sysdate);
+    
+    select * from tblMemo;

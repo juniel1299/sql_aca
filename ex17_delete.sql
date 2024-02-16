@@ -14,6 +14,10 @@
 commit;
 rollback;
 
-select * from tblCountry;
+select * from tblInsa;
 
-delete from tblCountry where 
+delete from tblInsa where num = 1001;
+
+delete from tblInsa where buseo ='총무부';
+
+delete from tblInsa;

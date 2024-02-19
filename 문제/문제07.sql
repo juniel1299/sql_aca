@@ -47,8 +47,10 @@ group by email;
 
 -- 5. tblAddressBook. 평균 나이가 가장 많은 출신(hometown)들이 가지고 있는 직업 중 가장 많은 직업은?
 select 
-* 
-from tbladdressbook;
+hometown,
+max(avg(age))
+from tbladdressbook
+group by hometown;
 
 -- 6. tblAddressBook. 남자 평균 나이보다 나이가 많은 서울 태생 + 직업을 가지고 있는 사람들을 가져오시오.
 

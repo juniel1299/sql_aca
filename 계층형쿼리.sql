@@ -49,7 +49,7 @@ insert into tblComputer values (13, '잉크카트리지', 3, 11);
 
 
 
-insert into tblCategoryBig values (1, '카테고리');
+insert into tblCategoryBig values (1, '카테고리',1);
 
 insert into tblCategoryMedium values (1, '컴퓨터용품', 1);
 insert into tblCategoryMedium values (2, '운동용품', 1);

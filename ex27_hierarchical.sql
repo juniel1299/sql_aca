@@ -19,6 +19,11 @@
                     - 정사원
         - 이부장
         
+    자기 참조 테이블(계층형 쿼리 사용) 유무 
+    - depth 고정 > 사용x or 사용 O 
+    - depth 미정 > 사용O
+    어디까지 뎁스가 갈 지 모르면 확실히 씀 
+    (대부분 테이블을 미리 지정하고 감 -> 굳이 계층형이 필요 없음.) 
     
 
 */
@@ -72,3 +77,53 @@ select
 from tblSelf
     start with super is null
     connect by super = prior seq;
+    
+    -- 카테고리
+
+create table tblCategoryBig(                                        
+    seq number primary key,                                         --식별자(PK)
+    name varchar2(100) not null,                                     --카테고리명
+    pseq number not null references tblCategoryBig(seq)             --부모카테고리(FK)
+);
+
+create table tblCategoryMedium(
+    seq number primary key,                                         --식별자(PK)
+    name varchar2(100) not null,                                    --카테고리명
+    pseq number not null references tblCategoryBig(seq)             --부모 카테고리(FK)
+);
+
+create table tblCategorySmall(
+    seq number primary key,                                         --식별자(PK)
+    name varchar2(100) not null,                                    --카테고리명
+    pseq number not null references tblCategoryMedium(seq)             --부모 카테고리(FK)
+);
+
+
+insert into tblCategoryBig values (1, '카테고리',null);
+
+insert into tblCategoryMedium values (1, '컴퓨터용품', 1);
+insert into tblCategoryMedium values (2, '운동용품', 1);
+insert into tblCategoryMedium values (3, '먹거리', 1);
+
+insert into tblCategorySmall values (1, '하드웨어', 1);
+insert into tblCategorySmall values (2, '소프트웨어', 1);
+insert into tblCategorySmall values (3, '소모품', 1);
+
+insert into tblCategorySmall values (4, '테니스', 2);
+insert into tblCategorySmall values (5, '골프', 2);
+insert into tblCategorySmall values (6, '달리기', 2);
+
+insert into tblCategorySmall values (7, '밀키트', 3);
+insert into tblCategorySmall values (8, '베이커리', 3);
+insert into tblCategorySmall values (9, '도시락', 3);
+
+
+select 
+b.name as 상,
+b.name as 중,
+s.name as 하
+from tblCategoryBig b
+    inner join tblcategoryMedium m
+        on b.seq = m.pseq
+            inner join tblcategorysmall s
+                on m.seq = s.pseq;

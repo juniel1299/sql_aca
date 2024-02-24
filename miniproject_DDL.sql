@@ -14,7 +14,7 @@ create table tblMovie(
     audience number,
     total_audience number,
     prologue varchar2(2000),
-    krmb_seq references tblKRMB(krmb_seq)
+    krmb_seq foreign key (krmb_seq)  references tblKRMB(krmb_seq)
 );
 create table tblReferMovie(                         -- 관련 영화
     refermovie_seq number primary key,
@@ -95,9 +95,11 @@ create table tblRank(                               --씨네 21 순위
 
 create table tblNews(                               --관련기사
     seq number primary key,
-    title varchar2(50),
-    link varchar2(255)
+    title varchar2(2000),
+    link varchar2(2000)
 );
+alter table tblNews modify title varchar2(2000);
+alter table tblNews modify link va2000);rchar2(
 
 create table tblNewsList(                          --관련기사 목록 안 됨
     seq number primary key,
@@ -173,4 +175,4 @@ commit;
 rollback;
 
 
-
+select * from ;

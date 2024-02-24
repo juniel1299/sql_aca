@@ -27,11 +27,24 @@
     FROM tblMen         
     where height >=180; -- 행 추출
     
+    select
+    *
+    from tblCountry;
     
     select
     *
     from tblCountry
     where capital <> '서울';
+    select 
+*
+
+from tblCountry
+where capital in ('서울','도쿄');
+    
+select
+    *
+    from tblCountry
+    where population between 10000 and 20000;
     
     select
     *
@@ -45,6 +58,10 @@
     where continent = 'AS' or continent = 'AF';
     
     
+select
+*
+from tblCountry
+where population is null;
     
     --tblComedian 
     
@@ -194,6 +211,10 @@ select name from tblInsa where name like '%수%'; -- 수가 들어가면 다 나
 
 select * from tblInsa where ssn like '______-2______';
 
+select
+*
+from tblCountry
+where capital like '%이%';
 
 /*
     RDBMS에서의  null

@@ -143,6 +143,17 @@ insert into tblType (txt) values('일이삼사오육칠팔구십');
 select * from tblType;
 
 
+create table school(
+ name varchar2(10), --이름 (문자)
+ korScore number,    -- 국어성적(숫자)
+ graduation date     --졸업날짜 (날짜형)
+);
 
+select * from school;
 
+insert into school (name) values('신짱구');
+insert into school (korScore) values(70);
+insert into school (graduation) values('2024-02-21');
 
+insert into school
+values('훈이',90,'2024-02-23');

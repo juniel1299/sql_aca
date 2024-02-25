@@ -124,4 +124,3 @@ select * from tblBBB
 minus
 select * from tblAAA;
 
-

@@ -113,16 +113,13 @@ create table tblNews(                               --관련기사
     title varchar2(2000),
     link varchar2(2000)
 );
-alter table tblNews modify title varchar2(2000);
-alter table tblNews modify link va2000);rchar2(
 
 create table tblNewsList(                          --관련기사 목록 안 됨
     seq number primary key,
-    news_seq number,  
-    movie_seq number,
-    foreign key (news_seq) references tblNews(seq),
-    foreign key (movie_seq) references tblMovie(movie_seq)
+    news_seq references tblNews(seq),
+    movie_seq references tblMovie(movie_seq)
 );
+
 
 create table tblStaff(                              --스탭
     staff_seq number primary key,

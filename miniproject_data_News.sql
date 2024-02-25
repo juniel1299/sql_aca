@@ -251,6 +251,7 @@ values
 (
 50,'','');
 
+
 insert into tblNewsList
 values
 (

@@ -1,6 +1,12 @@
 commit;
 
 
+/* 월요일날 장르리스트 삭제 후 다시 테이블 작성 만약 안되면 alter 로 그냥 한 줄 붙이기 
+alter table tblgenrelist add genre_seq2 references tblGenre(genre_seq);
+
+alter table tblgenrelist modify movie_seq invisible;
+alter table tblgenrelist modify movie_seq visible;
+*/
 
 
 create table tblMovie(                              

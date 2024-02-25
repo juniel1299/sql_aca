@@ -1,7 +1,13 @@
 commit;
 
 
+
 -- 장르 테이블 번호로 연결하면 PK라 장르가 여러개면 받아 올 수가 없음(장르리스트 1줄 늘려서도 무결성 제약 걸림)(-- 6. 장르 중 '드라마'와 '액션'을 동시에 속한 영화를 가져오시오. 확인 불가능..) -> 글자로 받거나 ..
+
+alter table tblMovie modify title_kor varchar2(2000);
+alter table tblMovie modify title_eng varchar2(2000);
+alter table tblMovie modify prologue varchar2(2000); 
+
 
 
 /*

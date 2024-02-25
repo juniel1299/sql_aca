@@ -1,7 +1,10 @@
 commit;
 
 
-/* 월요일날 장르리스트 삭제 후 다시 테이블 작성 만약 안되면 alter 로 그냥 한 줄 붙이기 
+-- 장르 테이블 번호로 연결하면 PK라 장르가 여러개면 받아 올 수가 없음(장르리스트 1줄 늘려서도 무결성 제약 걸림)(-- 6. 장르 중 '드라마'와 '액션'을 동시에 속한 영화를 가져오시오. 확인 불가능..) -> 글자로 받거나 ..
+
+
+/*
 alter table tblgenrelist add genre_seq2 references tblGenre(genre_seq);
 
 alter table tblgenrelist modify movie_seq invisible;

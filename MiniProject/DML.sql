@@ -1,4 +1,398 @@
 -- 영화
+insert into tblMovie (movie_seq, title_kor, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '외계+인 2부', 2021, 122, to_date('2024-01-10', 'yyyy-mm-dd'), 1417, 1429838, '반드시 돌아가야 한다. 모두를 지키기 위해
+
+인간의 몸속에 가둬진 외계인 죄수의 탈옥을 막으려다
+과거에 갇혀버린 ‘이안’(김태리)은
+우여곡절 끝에 시간의 문을 열 수 있는 ‘신검’을 되찾고,
+‘썬더’(김우빈)를 찾아 자신이 떠나온 미래로 돌아가려고 한다.
+한편 이안을 위기의 순간마다 도와주는 ‘무륵’(류준열)은
+자신의 몸속에 느껴지는 이상한 존재에 혼란을 느낀다.
+그런 ‘무륵’ 속에 요괴가 있다고 의심하는
+삼각산 두 신선 ‘흑설’(염정아)과 ‘청운’(조우진),
+소문 속 신검을 빼앗아 눈을 뜨려는 맹인 검객 ‘능파’(진선규),
+신검을 차지하려는 ‘자장’(김의성)까지 ‘이안’과 ‘무륵’을 쫓기 시작한다.
+
+한편 현대에서는,
+탈옥한 외계인 죄수 ‘설계자’가 폭발 시킨 외계물질 ‘하바’로 인해
+수많은 사람들이 죽고,
+우연히 외계인을 목격한 ‘민개인’(이하늬)은 이 사건을 파헤치기 시작한다.
+
+모든 하바가 폭발하기까지 남은 시간은 단 48분,
+시간의 문을 열고 무륵, 썬더, 두 신선과 함께 현재로 돌아온 이안.
+마침내 모든 비밀이 밝혀진다!', 2);
+
+-- 40
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '블레이드 러너 2049', 'Blade Runner 2049', 2017, 163, to_date('2017-10-12', 'yyyy-mm-dd'), 1320, 325401, '인간과 리플리컨트가 혼재된 2049년.
+인간의 통제를 벗어난 리플리컨트를 쫓는 블레이드 러너 ‘K’(라이언 고슬링)는
+임무 수행 도중 약 30년 전 여자 리플리컨트의 유골을 발견하고
+충격적으로 출산의 흔적까지 찾아낸다.
+
+리플리컨트가 출산까지 가능하다는 사실이 알려지면
+사회에 큰 혼란이 야기되므로 이를 덮으려는 경찰 조직과,
+그 비밀의 단서를 찾아내 더욱 완벽한 리플리컨트를 거느리고
+세상을 장악하기 위해 ‘K’를 쫓는 ‘니안더 월레스’(자레드 레토).
+
+리플리컨트의 숨겨진 진실에 접근할수록
+점차 정체성의 혼란을 겪게 되는 ‘K’는 과거 블레이드 러너였던 ‘릭 데커드’(해리슨 포드)를 만나
+전혀 상상치 못한 진실을 마주하게 되는데..
+
+# 리플리컨트: 21세기 초 만들어진 복제인간. 인간과 같은 지적 능력과 사고방식 그리고 신체적 조건을 갖춘, 노동력 제공을 위한 인간의 대체품
+# 블레이드 러너: 인간의 통제를 벗어난 리플리컨트를 색출해 ‘제거’하는 임무를 가진 특수경찰', 3);
+
+-- 41
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '인투 더 월드', 'Migration', 2023, 91, to_date('2024-01-10', 'yyyy-mm-dd'), 1234, 347488, '우린 멋진 모험을 하게 될 거야!
+하지만 불시착했습니다. 어디로 가야 될까요?
+
+가족을 과잉보호하는 아빠 ‘맥’ 때문
+평생을 작은 연못에서 안전하게 살아온 말러드 가족.
+하지만 호기심 가득한 남매 ‘댁스’와 ‘그웬’을 위해
+새로운 세상을 모험하고 싶은 엄마 ‘팸’의 설득으로
+가족들은 항상 꿈꿔온 자메이카로 생애 첫 가족 모험을 떠나기로 한다!
+
+설렘 넘치는 시작과 달리 태풍을 만나 길을 잃고,
+낯선 친구들을 만나고,
+위험 가득한 뉴욕에 불시착하게 된다.
+인생 처음으로 모든 계획이 틀어지고 위기에 빠진 말러드 가족은
+서툴지만 서로를 의지하며 모험을 계속한다.
+
+새로운 세상, 함께라면 두려울 것 없어!', 1);
+
+-- 44
+insert into tblMovie (movie_seq, title_kor, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '장인과 사위', 2023, 95, to_date('2024-02-15', 'yyyy-mm-dd'), 1234, 1993, '마른 하늘에 장인어른?!
+
+이제는 한물간 삼류 영화배우 박진기.
+음반 제작이라는 목표의 삼류가수 도필과
+영화제작이 목표인 진기는
+투자자를 구하려 떠난 부산에서
+잘해보려고 했던 것뿐인데 결과는 엉망진창.
+결국, 집에서 쫓겨난 진기는
+장모님의 계략으로 치매에 걸려 정신이
+깜빡깜빡 끊임없이 사고를 치는 장인과의
+기막힌 동거를 시작하게 되는데…
+
+왕년에 한가닥 하던
+삼류배우 사위 X 왕년에 한가락 하던 치매 노인 장인
+가깝고도 먼 사이 ‘장인과 사위’의 대환장 강제 동거 라이프', 2);
+
+-- 45
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '나의 올드 오크', 'The Old Oak', 2023, 113, to_date('2024-01-17', 'yyyy-mm-dd'), 1165, 24294, '영국 북동부의 폐광촌에서
+오래된 펍 ‘올드 오크’를 운영하는 ‘TJ’는
+어느 날 마을로 들어선 낯선 버스에서
+사진작가가 꿈인 소녀 ‘야라’를 만난다
+
+마을 주민들은 불쑥 찾아온
+‘야라’네 가족과 다른 사람들을 반기지 않지만
+‘TJ’와 ‘야라’는 ‘올드 오크’에서
+특별한 우정을 쌓아가는데···
+
+“중요한 건 무언가를 함께 한다는 거야”', 3);
+
+-- 48
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '더 퍼스트 슬램덩크', 'The First Slam Dunk', 2022, 125, to_date('2023-01-04', 'yyyy-mm-dd'), 921,  4864411, '전국 제패를 꿈꾸는 북산고 농구부 5인방의 꿈과 열정, 멈추지 않는 도전을 그린 영화', 2);
+
+-- 49
+insert into tblMovie (movie_seq, title_kor, title_other, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '극장판 아이돌리쉬 세븐; LIVE 4bit BEYOND THE PERiOD DAY 1', '劇場版アイドリッシュセブン LIVE 4bit BEYOND THE PERiOD', 'IDOLiSH7 Movie: LIVE 4bit - BEYOND THE PERiOD DAY 1', 2023, 93, to_date('2023-10-19', 'yyyy-mm-dd'), 901, 27882, '새로운 시작을 너와, 이 스테이지에서!
+
+‘블랙 오어 화이트 라이브 쇼다운’ 무대를 누빈
+남성 아이돌계 탑 러너
+IDOLiSH7 - TRIGGER - Re:vale - ŹOOĻ.
+
+각자 다른 매력을 지닌 최고의 그룹들이 한자리에 모여
+모두가 염원해온 꿈의 합동 무대를 선보인다.', 1);
+
+-- 50
+insert into tblMovie (movie_seq, title_kor, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '뽀로로 극장판 슈퍼스타 대모험', 2023, 77, to_date('2023-12-13', 'yyyy-mm-dd'), 876, 386921, '뽀로로와 친구들은 전 우주를 통틀어
+최고의 슈퍼스타를 뽑는 음악 축제
+‘파랑돌 슈퍼스타 선발대회’ 축제에
+참가하기 위해 모험을 떠난다.
+
+파랑돌 행성에 불시착한 뽀로로와 친구들 앞에 나타난
+열정 가득한 매니저 ‘스캣’의 도움으로
+‘뽀로로 밴드’는 가까스로 설레는 예선 무대에 오른다.
+
+한편, 악당 ‘빅벤’은 ‘스캣’과의 경쟁에서 이기기 위해
+모든 것이 완벽한 AI 아이돌 ‘아이원’을 앞세워 대회에 참가하지만
+‘뽀로로 밴드’의 예상치 못한 인기에
+위기감을 느껴 급기야 방해 공작을 벌이게 되고,
+뽀로로와 친구들은 마지막 공연을 앞두고
+갑작스러운 위기를 맞이하는데…
+
+12월, 우승보다 노는 게 제일 좋은
+뽀로로 밴드의 아주 특별한 모험이 시작된다!', 1);
+
+-- 51
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '오키쿠와 세계', 'Okiku and the World', 2023, 90, to_date('2024-02-21', 'yyyy-mm-dd'), 859, 1135, '“자네, ‘세계’라는 말을 아는가?”
+
+19세기 에도 시대, 몰락한 사무라이 가문의 외동딸 ‘오키쿠’.
+어느 날 복수의 결투에서 아버지를 잃고
+간신히 목숨은 건지지만 목소리를 잃는다.
+‘야스케’와 ‘츄지’는 에도의 공동주택을 돌며
+세입자들의 인분을 사고팔아 생계를 유지한다.
+
+아직 ‘세계’라는 단어조차 없었던 그 시절,
+가장 낮고 더러운 곳에서 수줍게 사랑하고 씩씩하게 살아가며
+그들만의 삶을 아름답게 꽃피우는 세 청춘.
+말할 수 없고 쓰는 법도 모르지만
+사랑하는 이에게 언젠가 전하고 싶은 말이 있다.
+그러니 오늘도 희망을 잃지 않고 앞을 향해 뚜벅뚜벅 걸어간다.
+
+그래, ‘세계’는 끝이 없는 거야!', 2);
+
+-- 53
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '메이 디셈버', 'May December', 2023, 117, to_date('2024-03-13', 'yyyy-mm-dd'), 773, 1314, '“왜 날 연기하고 싶어요?”
+“전 이해하기 어려운 캐릭터가 좋아요”
+
+신문 1면을 장식하며 미국을 떠들썩하게 만든
+충격적인 로맨스의 주인공들인
+‘그레이시’(줄리안 무어)와
+그보다 23살 어린 남편 ‘조’(찰스 멜튼).
+
+20여 년이 흐른 어느 날, 영화에서 그레이시를 연기하게 된 인기 배우
+‘엘리자베스’(나탈리 포트만)가
+캐릭터 연구를 위해 그들의 집에 머물게 된다.
+
+부부의 일상과 사랑을 깊숙이 들여다보는 엘리자베스의 시선과
+과거의 진실을 파헤치는 그의 잇따른 질문들이
+세 사람 사이에 균열을 가져오는데...', 4);
+
+
+-- 61
+insert into tblMovie (movie_seq, title_kor, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '부활 그 소망', 2023, 84, to_date('2024-02-01', 'yyyy-mm-dd'), 583, 6183, '사랑하는 사람과의 이별은 가장 큰 고통이다.
+그러나 부활의 소망을 가진 사람들은
+고통과 고난을 오히려 선물이라고 생각한다.
+왜냐하면 그로 인해 예수 그리스도를 알게 되고
+부활의 소망을 갖게 되기 때문이다.
+그래서 죽음은 소망이 된다.
+이 땅에서의 삶을 마친 후 궁극적으로 고대했던
+천국에 갈 수 있는 여정에 들어서기 때문이다.
+
+항암 120차를 넘긴 천정은과 사랑하는 아들을 잃은 이동원,
+그리고 남편을 잃은 정애숙,
+딸을 잃고 자신마저 이 땅을 떠난 이어령..
+그리고 초대교회의 사도 도마와 제자들의 삶을 통해
+부활의 소망을 가진 사람들이 어떻게 살았는지 알아간다.', 1);
+
+-- 62
+insert into tblMovie (movie_seq, title_kor, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '노량: 죽음의 바다', 'Noryang: Deadly Sea', 2023, 152, to_date('2023-12-20', 'yyyy-mm-dd'), 581, 4572133, '임진왜란 발발로부터 7년이 지난 1598년 12월.
+이순신(김윤석)은 왜군의 수장이던
+도요토미 히데요시가 갑작스럽게 사망한 뒤
+왜군들이 조선에서 황급히 퇴각하려 한다는 것을 알게 된다.
+
+“절대 이렇게 전쟁을 끝내서는 안 된다”
+
+왜군을 완벽하게 섬멸하는 것이
+이 전쟁을 올바르게 끝나는 것이라 생각한 이순신은
+명나라와 조명연합함대를 꾸려
+왜군의 퇴각로를 막고 적들을 섬멸하기로 결심한다.
+
+하지만 왜군의 뇌물 공세에 넘어간 명나라 도독 진린(정재영)은
+왜군에게 퇴로를 열어주려 하고,
+설상가상으로 왜군 수장인 시마즈(백윤식)의 살마군까지
+왜군의 퇴각을 돕기 위해 노량으로 향하는데…
+
+2023년 12월, 모두를 압도할 최후의 전투가 시작된다!', 2);
+
+-- 66
+insert into tblMovie (movie_seq, title_kor, title_other, title_eng, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values 
+(seqMovie.nextVal, '걸즈 앤 판처 최종장 제4화', 'ールズ＆パンツァー 最終章 第４話', 'Girls und Panzer das Finale: Part IV', 2023, 53, to_date('2024-01-17', 'yyyy-mm-dd'), 508, 10336, '지금이야말로 오아라이 여고의 진가를 보여줄 때!
+
+중요한 존재인 아귀팀을 초반에 잃고
+전례 없는 위기에 빠진 오아라이 여고 전차도 팀.
+이에 케이조쿠 고교는 불시에 공격하며 포위망을 좁혀 온다.
+
+한편, 쿠로모리미네 여고와 세인트 글로리아나 여고의 전투도
+숨 막히는 격전이 벌어지는데…
+
+동계 무한궤도배 준결승전,
+과연 결승전 진출팀은 누가 될 것인가!', 2);
+
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '사운드 오브 프리덤', 'Sound of Freedom', null, 2023, 131, to_date('2024-02-21', 'yyyy-mm-dd'), 12877, 14935, '인신매매시장 규모 연 1,500억불
+전 세계 800만 명의 아이들이 사라졌다!
+
+한 순간에 납치되어, 전 세계에 밀매되는 아이들.
+믿을 수 없는 실화를 기반으로 한 구출 작전이 시작된다!', 3);
+
+
+--2 
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq)
+values (seqMovie.nextVal, '추락의 해부', 'Anatomy of a Fall', 'Anatomie d''une chute', 2023, 151, to_date('2024-01-31', 'yyyy-mm-dd'), 12424, 75794, '남편의 추락사로 한순간에 유력한 용의자로 지목된 유명 작가 ‘산드라’.
+유일한 목격자는 시각장애가 있는 아들과 안내견뿐.
+단순한 사고였을까? 아니면 우발적 자살 혹은 의도된 살인?
+
+사건의 전말을 해부해 가는 제76회 칸영화제 황금종려상 수상작', 3);
+
+-- 3
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, 'DMZ 동물 특공대', null, null, 2023, 74, to_date('2024-02-14', 'yyyy-mm-dd'), 11293, 15071, '\“뭐? 인간들이 화해하면 우리 집이 사라진다고?!\”
+
+지구상에 단 하나뿐인 공간 DMZ에 살고 있는
+‘담비’와 귀요미 친구들에게 들려온 날벼락 같은 소문!
+
+동물들의 유토피아 DMZ를 지키기 위해선
+폭탄을 터뜨려 인간들의 평화를 막아야만 한다!
+
+‘담비’, ‘쾡이’, ‘멧돼이먼’, ‘황박이’, ‘람쥐’까지
+DMZ 동물 특공대 출동 준비 완료!
+2월, 우리 집은 우리가 지킨다!', 1);
+
+
+-- 4.
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '우견니', 'Almost Love', '遇见你', 2022, 110, to_date('2024-02-14', 'yyyy-mm-dd'), 8441, 15807, '“내 청춘은 모두 너와 연결되어 있어”
+
+친구들에게 놀림당하지만 늘 햇살처럼 밝은 ‘자오양’.
+무뚝뚝한 엘리트 전학생 ‘저우찬’.
+
+극과 극인 두 사람은 함께 꿈을 키워 나가며 점차 가까워지고,
+단 한 번뿐인 서로의 청춘에 밝은 빛이 되어준다.
+
+“너는 내게 온 별이야”
+
+가장 빛나는 시기에 만난 두 사람.
+그렇게 시작된 너와 나의 빈틈없이 찬란한 인생 첫 로맨스!', 2);
+
+-- 5. 
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '바튼 아카데미', 'The Holdovers', null, 2023, 133, to_date('2024-02-21', 'yyyy-mm-dd'), 6243, 8232, '함께 있지만 그들은 언제나 혼자였다
+
+1970년 바튼 아카데미,
+크리스마스를 맞아 모두가 떠난 텅빈 학교에는 세 사람이 남게 된다.
+고집불통 역사 선생님 ‘폴’, 문제아 ‘털리’ 그리고 주방장 ‘메리’
+이들은 원치 않았던 동고동락을 시작하게 되고,
+예상치 못한 순간, 서로의 비밀을 공유하면서 특별한 우정을 나누게 되는데…', 3);
+
+-- 6. 
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '괴물', 'Monster', '怪物', 2004, 96, to_date('2023-11-29', 'yyyy-mm-dd'), 5964, 512640, '“우리 동네에는 괴물이 산다”
+
+싱글맘 사오리(안도 사쿠라)는
+아들 미나토(쿠로카와 소야)의 행동에서 이상 기운을 감지한다.
+용기를 내 찾아간 학교에서 상담을 진행한 날 이후
+선생님과 학생들의 분위기가 심상치 않게 흐르기 시작하고.
+
+“괴물은 누구인가?”
+한편 사오리는 친구들로부터 따돌림을 당하고 있는
+미나토의 친구 요리(히이라기 히나타)의 존재를 알게 되고
+자신이 아는 아들의 모습과 사람들이 아는 아들의 모습이
+다르다는 사실을 어렴풋이 깨닫는데…
+태풍이 몰아치던 어느 날, 아무도 몰랐던 진실이 드러난다.', 2);
+
+-- 7. 정글 번치
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '정글번치 : 월드투어', null, 'Les As de la Jungle 2 - Operation Tour du Monde', 2023, 90, to_date('2024-01-31', 'yyyy-mm-dd'), 5047, 49916, '정글에 부글부글 거품 폭탄이?!
+두더지 악당의 습격으로 폭발 위기에 처한 정글!
+
+정글을 구해야만 해!
+정글을 구하려면
+전설의 ‘알버트’ 박사를 찾아서 해독제를 만들어야 해!
+
+눈보라 산, 사막, 비밀 동굴, 대나무 숲까지 전 세계로 떠난 정글번치!
+과연 두더지 악당의 추격을 피해 박사를 찾고 정글을 구할 수 있을까?
+
+올 겨울방학, 정글 구하는 김에 세계일주 가자고!!', 1);
+
+-- 8. 
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '이프 온리', 'If Only', null, 2004, 96, to_date('2024-02-21', 'yyyy-mm-dd'), 4525, 1025874, '정글에 부글부글 거품 폭탄이?!
+두더지 악당의 습격으로 폭발 위기에 처한 정글!
+
+정글을 구해야만 해!
+정글을 구하려면
+전설의 ‘알버트’ 박사를 찾아서 해독제를 만들어야 해!
+
+눈보라 산, 사막, 비밀 동굴, 대나무 숲까지 전 세계로 떠난 정글번치!
+과연 두더지 악당의 추격을 피해 박사를 찾고 정글을 구할 수 있을까?
+
+올 겨울방학, 정글 구하는 김에 세계일주 가자고!!', 2);
+
+-- 9
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '중경삼림 리마스터링', 'Chungking Express', '重慶森林', 1994, 102, to_date('2021-03-04', 'yyyy-mm-dd'), 4517, 105188, '1994년 홍콩,
+
+“내 사랑의 유통기한은 만 년으로 하고 싶다”
+만우절의 이별 통보가 거짓말이길 바라며 술집을 찾은 경찰 223
+고단한 하루를 보내고 술집에 들어온 금발머리의 마약밀매상
+
+"그녀가 떠난 후 이 방의 모든 것들이 슬퍼한다"
+여자친구가 남긴 이별 편지를 외면하고 있는 경찰 663
+편지 속에 담긴 그의 아파트 열쇠를 손에 쥔 단골집 점원 페이
+
+네 사람이 만들어낸 두 개의 로맨스
+새로운 사랑을 만나는 방법에 대한 독특한 상상력', 3);
+
+-- 10
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '서울의 봄', '12.12: THE DAY', null, 2023, null, to_date('2023-11-22', 'yyyy-mm-dd'), 3806, 12910168, '1979년 12월 12일, 수도 서울 군사반란 발생
+그날, 대한민국의 운명이 바뀌었다
+
+대한민국을 뒤흔든 10월 26일 이후,
+서울에 새로운 바람이 불어온 것도 잠시
+12월 12일, 보안사령관 전두광이 반란을 일으키고
+군 내 사조직을 총동원하여 최전선의 전방부대까지 서울로 불러들인다.
+
+권력에 눈이 먼 전두광의 반란군과
+이에 맞선 수도경비사령관 이태신을 비롯한
+진압군 사이, 일촉즉발의 9시간이 흘러가는데…
+
+목숨을 건 두 세력의 팽팽한 대립
+오늘 밤, 대한민국 수도에서 가장 치열한 전쟁이 펼쳐진다!', 2);
+
+-- 60 
+insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
+values (seqMovie.nextVal, '예수는 역사다', 'The Case for Christ', null, 2017, 113, to_date('2024-03-07', 'yyyy-mm-dd'), 595, 175655, '이 영화는 실화다!
+
+영화는 주인공 리 스트로벨이 기자로서
+명예로운 상을 수상하고 진급하는 장면으로 시작한다.
+승진을 자축하는 가족 식사 자리에서
+사랑하는 딸의 사고로 위급상황에 처하게 되고,
+거기서 만난 간호사 앨피를 통해
+아내는 예수님을 믿게 되면서 이런 일련의 일들을
+우연으로만 여긴 주인공은 아내로 인한 고민을
+회사의 동료들과 상의하게 되고,
+자신의 능력으로 아내가 믿기 시작한
+기독교의 허구를 파헤쳐서
+아내를 기독교라는 미신으로부터 구출해 내기 위한
+취재를 시작하게 된다.
+한편, 아내와의 갈등과는 별도의
+총기 사건 취재도 진행하면서
+범인으로 지목된 ‘힉스’를 통해서 듣게 되는 말과
+그토록 미워하던 아버지의 장례식을 통해
+그동안 예상하지 못하던 아버지의 사랑을 깨달으면서,
+보이는 것만 믿을 수 있다고 믿던
+주인공의 편견은 서서히 무너지기 시작하고,
+남편의 구원을 위해 간절하고 끈질기게 기도하는
+아내의 기도가 점점 쌓이면서,
+기독교를 인정할 수 없었던 고집불통 기자는
+십자가의 증거 앞에서
+“ YOU WIN”이라고 항복을 선언하고 만다.', 1);
+
+
 insert into tblMovie (movie_seq, title_kor, title_eng, title_other, production_year, running_time, release_date, audience, total_audience, prologue, KRMB_seq) 
     values (seqMovie.nextVal, '웡카', 'Wonka', null, 2023, 116, to_date('2024-01-31', 'yyyy-mm-dd'), 662882, 2691215, '세상에서 가장 달콤한 여정
 좋은 일은 모두 꿈에서부터 시작된다!

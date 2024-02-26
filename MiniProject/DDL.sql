@@ -88,7 +88,8 @@ create table tblActorList(                          --배우 목록
     seq number primary key,
     actor_seq references tblActor(actor_seq),
     movie_seq references tblmovie(movie_seq),
-    role varchar2(50)
+    role varchar2(50),
+    filmography varchar2(500)
 );
 
 

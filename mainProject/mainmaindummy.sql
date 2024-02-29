@@ -1,3 +1,5 @@
+
+
 --관리자 테이블 tblManager 완료
 insert into tblManager
 values(
@@ -38,6 +40,7 @@ values(
 insert into tblManager
 values(
 10,'조혜정','jo238pp','dffjnr');
+
 
 -- 온라인 강의 tblOnlinelecture 완료
 insert into tblOnlineLecture
@@ -82,7 +85,57 @@ insert into tblCurriculumProgress
 values(
 3,'강의 종료');
 
+
 --  교재목록
+
+insert into tblTextBookList
+values(
+1,1,1);
+
+insert into tblTextBookList
+values(
+2,2,1);
+
+insert into tblTextBookList
+values(
+3,3,6);
+
+insert into tblTextBookList
+values(
+4,4,3);
+
+insert into tblTextBookList
+values(
+5,5,9);
+
+insert into tblTextBookList
+values(
+6,6,10);
+
+insert into tblTextBookList
+values(
+7,7,11);
+
+insert into tblTextBookList
+values(
+8,8,2);
+
+insert into tblTextBookList
+values(
+9,9,5);
+
+insert into tblTextBookList
+values(
+10,10,5);
+
+insert into tblTextBookList
+values(
+11,11,7);
+
+insert into tblTextBookList
+values(
+12,12,4);
+
 insert into tblTextBookList 
 values(
 13,13,8);
@@ -110,8 +163,6 @@ values(
 insert into tblTextBookList
 values(
 19,19,17);
-
-select * from tblTextbooklist;
 
 
 -- 교재 tblTextbook  완료
@@ -189,8 +240,7 @@ values(
 
 insert into tblTextbook
 values(
-19,'완벽한 IT 인프라 구축의 자동화를 위한 Kubernetes 쿠버네티스','정보문화사
-');
+19,'완벽한 IT 인프라 구축의 자동화를 위한 Kubernetes 쿠버네티스','정보문화사');
 
 select * from tblCoursePeriod;
 -- 과정 기간 tblCoursePeriod  완료
@@ -210,7 +260,6 @@ values(
 
 
 -- 과목 tblSubject  완료
-select * from tblSubject;
 
 insert into tblSubject
 values(
@@ -268,10 +317,21 @@ insert into tblSubject
 values(
 14,'컴퓨터 이론',15);
 
-select * from tblQuestion;
--- 문제  tblQuestion  필기(1~10 java 문제 , 11 ~ 20 Oracle 문제 , 21 ~ 30 HTML+CSS+JS 문제 , 31 ~ 40 JSP 문제 , 41~50 Spring 문제 , 51~60 Python 문제 , 61 ~ 70 Flask 문제 , 71 ~ 80 Django 문제
+insert into tblSubject
+value(
+15,'AWS',15);
+
+insert into tblSubject
+value(
+16,'Docker',15);
+
+insert into tblSubject
+value(
+17,'Kubernetes',15);
+
+-- 문제  tblQuestion  필기(1~10 java 문제 , 11 ~ 20 Oracle 문제 , 21 ~ 30 HTML+CSS+JS 문제 , 31 ~ 40 JSP 문제 , 41~50 Spring 문제 , 51~60 Python 문제 , 61 ~ 70 Flask 문제 , 71 ~ 80 Django 문제)
 -- 필기 (81 ~ 90 Swift 문제 , 91~100 Kotlin 문제 , 101 ~ 110 React 문제 , 111 ~ 120 ElasticSearch 문제 , 121 ~ 130 데이터 구조 알고리즘 문제 , 131 ~ 140 컴퓨터이론 문제)
--- 실기 (순서 같음 ) 141 ~ 
+-- 실기 (순서 같음 ) 141 ~ 280 
 insert into tblQuestion
 values(
 1,'자바 소스 확장자는?','3');
@@ -312,7 +372,6 @@ insert into tblQuestion
 values(
 10,'자바가 파이썬에 비해 코드 길이가 긴 이유는 ? ','1');
 
--- 오라클 문제 
 insert into tblQuestion
 values(
 11,'오라클db에서 varchar2의 의미로 올바른것은?','5');
@@ -393,7 +452,6 @@ insert into tblQuestion
 values(
 30,'쿠키가 저장되는 곳으로 올바른 것은?','5');
 
---JSP문제
 insert into tblQuestion
 values(
 31,'JSP실행순서로 올바른 순서는?','4');
@@ -434,7 +492,6 @@ insert into tblQuestion
 values(
 40,'세션의 특징으로 올바른 것은?','2');
 
---Spring 문제
 insert into tblQuestion
 values(
 41,'스프링 프레임워크가 가지는 구조로 올바른 것은?','1');
@@ -1397,6 +1454,210 @@ values(
 insert into tblQuestion
 values(
 280,'빅 데이터란 무엇인가요?','전통적인 데이터베이스 시스템으로 처리하기 어려울 정도로 방대한 양의 데이터를 의미합니다.');
+
+
+
+--출결 인정 서류 tblAttendancePapers
+
+insert into tblAttendancePapers
+values(
+1,?,'조퇴','2023-09-13','코로나 진단 서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+2,?,'지각','2023-09-21','사망신고서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+3,?,'결석','2023-10-19','입원서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+4,?,'지각','2023-10-25','경찰서 사고 확인서 ','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+5,?,'지각','2023-10-30','지하철 지연 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+6,?,'조퇴','2023-11-08','의사 확인 서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+7,?,'결석','2023-11-10','부친 사망 신고서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+8,?,'결석','2023-11-15','병가증명서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+9,?,'결석','2023-11-22','의사 진단서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+10,?,'지각','2023-11-23','결혼식 참석 증명서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+11,?,'지각','2023-11-24','의사 진단서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+12,?,'지각','2023-11-28','지하철 지연 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+13,?,'조퇴','2023-11-29','의사 진단서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+14,?,'지각','2023-11-30','지하철 지연 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+15,?,'결석','2023-12-01','모친 사망 신고서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+16,?,'결석','2023-12-05','결혼식 참석 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+17,?,'결석','2023-12-07','입원서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+18,?,'결석','2023-12-08','코로나 진단 서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+19,?,'결석','2023-12-14','입원서류','출석 인정');
+
+insert into tblAttendancePapers
+values(
+20,?,'조퇴','2023-12-15','의사 진단서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+21,?,'지각','2023-12-18','청첩장','출석 인정');
+
+insert into tblAttendancePapers
+values(
+22,?,'조퇴','2023-12-20','의사소견서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+23,?,'조퇴','2023-12-22','국가 자격증 시험 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+24,?,'조퇴','2023-12-26','기업 면접 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+25,?,'지각','2023-12-27','토익 시험 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+26,?,'결석','2023-12-27','예비군 훈련 확인서 ','출석 인정');
+
+insert into tblAttendancePapers
+values(
+27,?,'결석','2023-12-29','예비군 훈련 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+28,?,'조퇴','2024-01-02','국가 자격증 시험 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+29,?,'결석','2024-01-04','기업 면접 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+30,?,'결석','2024-01-05','코로나 진단 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+31,?,'지각','2024-01-08','지하철 지연 확인서 ','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+32,?,'지각','2024-01-11','지하철 지연 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+33,?,'외출','2024-01-12','국민취업지원제도 상담','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+34,?,'외출','2024-01-12','국민취업지원제도 상담','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+35,?,'외출','2024-01-15','국민취업지원제도 상담','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+36,?,'외출','2024-01-17','결혼식 참석 증명서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+37,?,'지각','2024-01-19','지하철 지연 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+38,?,'외출','2024-01-22','개인 경조사','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+39,?,'지각','2024-01-23','교통사고 경찰 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+40,?,'결석','2024-01-25','부친 사망 신고서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+41,?,'조퇴','2024-01-30','의사 진단서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+42,?,'결석','2024-01-31','출생 신고서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+43,?,'지각','2024-02-02','교통사고 경찰 확인서','출석 미인정');
+
+insert into tblAttendancePapers
+values(
+44,?,'결석','2024-02-06','입원 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+45,?,'결석','2024-02-08','모친 사망 신고서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+46,?,'지각','2024-02-14','기업 면접 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+47,?,'조퇴','2024-02-15','기업 면접 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+48,?,'결석','2024-02-16','국가 자격증 시험','출석 인정');
+
+insert into tblAttendancePapers
+values(
+49,?,'지각','2024-02-19','기업 면접 확인서','출석 인정');
+
+insert into tblAttendancePapers
+values(
+50,?,'지각','2024-02-22','교통사고 경찰 확인서','출석 미인정');
 
 
 commit;

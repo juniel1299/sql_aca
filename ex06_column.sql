@@ -28,10 +28,17 @@ select name, 100 from tblInsa;
 select distinct continent from tblCountry;
 
 -- tblInsa 어떤 부서들이 있습니까?
+select * from tblinsa;
 select distinct buseo from tblInsa;
 select distinct jikwi from tblInsa;
 select distinct city from tblInsa;
 
+
+select name,
+case when substr(ssn,8,1) = 1 then '남자'  
+	 when substr(ssn,8,1) = 2 then '여자'
+     end
+from tblinsa;
 select distinct name from tblInsa; --동명이인 없다. 
 
 select distinct buseo, name from tblInsa; --부서 이름 동시에 겹치는게 없음 

@@ -93,6 +93,11 @@ select
         from tblInsa;
         
        
+select 
+    count(case
+        when buseo = '기획부' then 1
+        end)
+        from tblinsa;
        /*
        
        2. sum()
